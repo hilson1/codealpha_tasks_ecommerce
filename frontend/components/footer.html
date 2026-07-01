@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Footer</title>
+
+    <style>
+      footer {
+        background: #f5f5f5;
+        color: #000000;
+        padding: 60px 8%;
+      }
+
+      .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 40px;
+      }
+
+      .footer-logo h2 {
+        color: #38bdf8;
+        margin-bottom: 15px;
+      }
+
+      .footer-logo p {
+        color: #000000;
+        line-height: 1.7;
+      }
+
+      .footer-links h3,
+      .footer-services h3,
+      .footer-contact h3 {
+        margin-bottom: 18px;
+      }
+
+      .footer-links ul,
+      .footer-services ul {
+        list-style: none;
+      }
+
+      .footer-links li,
+      .footer-services li {
+        margin-bottom: 12px;
+      }
+
+      .footer-links a,
+      .footer-services a {
+        color: #000000;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .footer-links a:hover,
+      .footer-services a:hover {
+        color: #38bdf8;
+      }
+
+      .footer-contact p {
+        margin-bottom: 10px;
+        color: #000000;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #374151;
+        margin-top: 40px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-icons a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #1f2937;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .social-icons a:hover {
+        background: #38bdf8;
+      }
+
+      @media (max-width: 768px) {
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>Ecommerce</h2>
+          <p>
+            All kinds of goods are available here. Shop with us for the best
+            deals and offers on a wide range of products.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#electronics">Electronics</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Kitchen</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>📍 Kathmandu, Nepal</p>
+          <p>📧 info@example.com</p>
+          <p>📞 +977 98XXXXXXXX</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ecommerce. All Rights Reserved.</p>
+
+        <div class="social-icons">
+          <a href="#">H</a>
+          <a href="#">I</a>
+          <a href="#">L</a>
+          <a href="#">S</a>
+          <a href="#">O</a>
+          <a href="#">N</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

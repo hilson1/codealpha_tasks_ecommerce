@@ -1,0 +1,332 @@
+/* HERO */
+
+.hero {
+  width: 90%;
+  max-width: 1250px;
+
+  margin: 40px auto;
+
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+
+  border-radius: 25px;
+
+  padding: 60px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  color: white;
+
+  animation: fadeIn 1s;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 55px;
+
+  margin-bottom: 20px;
+
+  line-height: 1.1;
+}
+
+.hero span {
+  color: #ffd43b;
+}
+
+.hero p {
+  font-size: 20px;
+
+  margin-bottom: 35px;
+
+  opacity: 0.95;
+}
+
+.hero img {
+  width: 420px;
+
+  border-radius: 20px;
+
+  animation: float 4s infinite;
+}
+
+.hero-btn {
+  display: inline-block;
+
+  padding: 16px 35px;
+
+  background: white;
+
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  border-radius: 50px;
+
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* OFFER */
+
+.offers {
+  width: 90%;
+
+  max-width: 1250px;
+
+  margin: 35px auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+  gap: 25px;
+}
+
+.offer-card {
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  font-size: 40px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+
+  animation: slideUp 0.8s;
+}
+
+.offer-card:hover {
+  transform: translateY(-8px);
+}
+
+.offer-card h3 {
+  font-size: 22px;
+
+  margin: 15px 0;
+}
+
+.offer-card p {
+  color: #777;
+}
+
+/* AD */
+
+.ad-banner {
+  width: 90%;
+
+  max-width: 1250px;
+
+  margin: 40px auto;
+
+  padding: 40px;
+
+  background: linear-gradient(90deg, #111827, #1e40af);
+
+  border-radius: 20px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  color: white;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.ad-banner h2 {
+  font-size: 38px;
+
+  margin-bottom: 10px;
+}
+
+.section-title {
+  text-align: center;
+
+  font-size: 38px;
+
+  margin-bottom: 35px;
+
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+
+  width: 90px;
+
+  height: 5px;
+
+  background: #2563eb;
+
+  display: block;
+
+  margin: 12px auto;
+
+  border-radius: 30px;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  width: 90%;
+
+  max-width: 1250px;
+
+  margin: 70px auto;
+
+  padding: 60px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter h2 {
+  font-size: 36px;
+
+  margin-bottom: 15px;
+}
+
+.newsletter p {
+  margin-bottom: 30px;
+
+  color: #666;
+}
+
+.newsletter div {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  width: 350px;
+
+  padding: 16px;
+
+  border-radius: 12px;
+
+  border: 1px solid #ddd;
+
+  font-size: 16px;
+}
+
+.newsletter button {
+  padding: 16px 35px;
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+.newsletter button:hover {
+  background: #1d4ed8;
+}
+
+/* ANIMATION */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 40px 30px;
+  }
+
+  .hero img {
+    width: 100%;
+
+    margin-top: 30px;
+  }
+
+  .ad-banner {
+    flex-direction: column;
+
+    gap: 25px;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .newsletter {
+    padding: 35px 20px;
+  }
+
+  .newsletter input {
+    width: 100%;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+}
